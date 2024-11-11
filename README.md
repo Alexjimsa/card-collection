@@ -1,0 +1,2 @@
+# card-collection
+A collection of simple, reusable card components built with native HTML and CSS. This repository showcases different card layouts and designs, ideal for frontend practice and UI inspiration.
