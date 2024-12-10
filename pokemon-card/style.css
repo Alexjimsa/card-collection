@@ -1,0 +1,63 @@
+
+.border > * {
+    border: 1px solid red;
+}
+
+
+
+
+
+/* COMPOSITION */
+
+.vertical_flow > * + * {
+    margin-top: var(--flow-space, 1em);
+}
+
+.horizontal_flow > * + * {
+    margin-left: .5em;
+}
+
+
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.align_items-center {
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.center {
+    margin: auto;
+}
+
+.card {
+    max-width: 30%;
+    /*min-width: 30%;*/
+
+    background-color: hsl(40, 100%, 60%);
+}
+
+/* UTILITY */
+
+.upcase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+
+/* BLOCK */
+
+
+
+
+/* EXCEPTION */
