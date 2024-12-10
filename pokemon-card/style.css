@@ -38,8 +38,10 @@
 }
 
 .card {
-    max-width: 30%;
-    /*min-width: 30%;*/
+    margin-top: 30%;
+
+    /*max-width: 30%;*/
+    min-width: 30%;
 
     background-color: hsl(40, 100%, 60%);
 }
@@ -54,9 +56,19 @@
     text-transform: capitalize;
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
 
 /* BLOCK */
 
+.type {
+    background-color: rgb(96, 192, 192);
+
+    padding: .1em;
+    border: 1px solid black;
+    border-radius: .4em;
+}
 
 
 
