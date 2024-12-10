@@ -1,0 +1,56 @@
+:root {
+    background: linear-gradient(hsl(60, 100%, 84%), hsl(120, 14%, 48%));
+    background-clip: padding-box;
+}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: transparent;
+    background-clip: border-box;   
+}
+
+h2 {
+    font-size: 24px;
+    font-family: "Pirata One", system-ui;
+    /*text-transform: uppercase;*/
+}
+
+
+.card {
+    margin: auto;
+    margin-top: 150px;
+
+    background-color: white;
+
+    width: 400px;/*Hacer con calc*/
+
+    border-radius: 1rem;
+}
+
+img {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.hero {
+    width: 400px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.alignitems-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alignitems-center > label {
+    /*font-size: 12px;*/
+    font-family: "Pirata One", system-ui;
+}
+
+section {
+    padding: 12px;
+}
