@@ -38,12 +38,15 @@
 }
 
 .card {
-    margin-top: 30%;
+    margin-top: 10%;
 
     /*max-width: 30%;*/
     min-width: 30%;
 
-    background-color: hsl(40, 100%, 60%);
+    background-color: hsl(39, 100%, 75%);
+
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 /* UTILITY */
@@ -60,6 +63,26 @@
     cursor: pointer;
 }
 
+.hug-content {
+    width: fit-content;
+}
+
+.padding_inline-1rem {
+    padding-inline: 1rem;
+}
+
+.padding_block-05rem {
+    padding-block: .5rem;
+}
+
+.background-grey {
+    background-color: hsl(0, 0%, 95%);
+}
+
+.border_radius-1rem {
+    border-radius: .5rem;
+}
+
 /* BLOCK */
 
 .type {
@@ -70,6 +93,17 @@
     border-radius: .4em;
 }
 
+.ability {
+    background-color: hsl(0, 0%, 75%);
+
+    padding: .1em;
+    border: 1px solid black;
+    border-radius: .4em;
+}
 
 
 /* EXCEPTION */
+
+.ability[aria-type="hidden-ability"] {
+    background-color: hsl(0, 0%, 45%);
+}

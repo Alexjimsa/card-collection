@@ -9,27 +9,27 @@
     <link rel="icon" href="pokeball.ico">
 </head>
 <body>
-    <div class="flex-column center card border vertical_flow align_items-center">
-        <div class="border flex-column align_items-center">
+    <div class="flex-column center card vertical_flow align_items-center hug-content">
+        <div class="flex-column align_items-center">
             <img id="pokemonSprite" src="" alt="Pokemon Sprite" style="display: block;">
             <div class="flex-row horizontal_flow">
                 <h3 id="pokemonType1" class="upcase type">type1</h3>
                 <h3 id="pokemonType2" class="upcase type">type2</h3>
             </div>
         </div>
-        <div class="border">
+        <div class="padding_inline-1rem padding_block-05rem background-grey border_radius-1rem">
             <h2># <span id="pokemonNumber"></span> <span id="pokemonName" class="capitalize"></span></h2>
             <ul>
                 <li>Base Experience: <span id="pokemonExperience"></span> xp</li>
                 <li>Height: <span id="pokemonHeight"></span> m</li>
                 <li>Weight: <span id="pokemonWeight"></span> kg</li>
             </ul>
-            <div class="flex-column vertical_flow">
+            <div class="flex-column align_items-center">
                 <div class="flex-row horizontal_flow">
-                    <h3 id="pokemonAbility1" class="capitalize">1Ability</h3>
-                    <h3 id="pokemonAbility2" class="capitalize">2Ability</h3>
+                    <h3 id="pokemonAbility1" class="capitalize ability">1Ability</h3>
+                    <h3 id="pokemonAbility2" class="capitalize ability">2Ability</h3>
                 </div>
-                <h3 id="pokemonAbility3" class="capitalize">HiddenAbility</h3>
+                <h3 id="pokemonAbility3" class="capitalize ability hug-content" aria-type="hidden-ability">HiddenAbility</h3>
             </div>
         </div>
         <button onclick="generateRandom()" class="cursor-pointer">New Pokémon</button>
