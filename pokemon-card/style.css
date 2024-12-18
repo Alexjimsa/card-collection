@@ -3,7 +3,41 @@
     border: 1px solid red;
 }
 
-
+/* Default (light) mode */
+body {
+    margin: 0; /* Removes the default margin from the body */
+    background-image: 
+      linear-gradient(to right, hsla(0, 0%, 0%, 0.1) 1px, transparent 1px), /* Horizontal grid lines */
+      linear-gradient(to bottom, hsla(0, 0%, 0%, 0.1) 1px, transparent 1px); /* Vertical grid lines */
+    background-size: 30px 30px; /* Grid size */
+    background-color: white; /* Light background */
+}
+  
+body::before {
+    content: ""; /* Necessary to create the pseudo-element */
+    position: absolute; /* Fixes the gradient to cover the entire screen */
+    top: 0;
+    width: 100%; /* Full width of the screen */
+    height: 100%; /* Full height of the screen */
+    background: radial-gradient(circle, transparent 70%, hsla(0, 0%, 0%, 0.4) 100%); /* Radial shadow gradient on the edges */
+    pointer-events: none; /* Prevents the pseudo-element from interfering with interactivity */
+}
+  
+/* Dark mode (when the user prefers dark theme) */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-image: 
+          linear-gradient(to right, hsla(0, 0%, 100%, 0.1) 1px, transparent 1px), /* Light grid lines for dark mode */
+          linear-gradient(to bottom, hsla(0, 0%, 100%, 0.1) 1px, transparent 1px); /* Light grid lines for dark mode */
+        background-size: 30px 30px; /* Grid size */
+        background-color: hsl(0, 0%, 7%); /* Dark background */
+    }
+  
+    body::before {
+        background: radial-gradient(circle, transparent 70%, hsla(0, 0%, 30%, 0.4) 100%); /* Lighter radial shadow for dark mode */
+    }
+}
+  
 
 
 
